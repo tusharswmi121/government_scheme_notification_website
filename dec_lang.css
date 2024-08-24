@@ -1,0 +1,152 @@
+    /* CSS Reset */
+    body {
+      font-family: 'Baloo Bhai', cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      /* background: url(UPJIVIK_logo.png) no-repeat ; */
+      /* background-position: 350px 170px; */
+      background:rgba(233, 248, 214, 0.726);
+
+      /* top: 350px; */
+  }
+  .header{
+   color: black;
+
+  }
+h1{
+   position: relative;
+   top:200px;
+   left:450px;
+   color: black;
+   font-size: 40px;
+}
+  .left {
+      display: inline-block;
+
+      /* border: 1px solid red; */
+      position: absolute;
+      left: 60px;
+      top: 20px;
+  }
+
+  .left img {
+      width: 136px;
+      /* filter: invert(100%); */
+  }
+
+  .left div {
+      line-height: 19px;
+      font-size: 26px;
+      text-align: center;
+  }
+  
+  .mid {
+      display: block;
+      width: 33%;
+      margin: 25px auto;
+      /* border: 2px solid red; */
+      /* border: 2px solid green; */
+  }
+
+  .right {
+      position: absolute;
+      right: 34px;
+      top: 43px;
+      display: inline-block;
+      /* border: 2px solid yellow; */
+  }
+
+  .navbar {
+      display: inline-block;
+  }
+
+  .navbar li {
+      display: inline-block;
+      font-size: 16px;
+  }
+
+  .navbar li a {
+      color: rgb(34, 33, 33);
+      text-decoration: none;
+      padding: 20px 20px;
+
+  }
+
+  .navbar li a:hover{
+
+      text-decoration: underline;
+      color: grey;
+  }
+  .navbar li a.active {
+      text-decoration: underline;
+      color: rgb(211, 107, 107);
+
+  }
+
+  button {
+      font-family: 'Baloo Bhai', cursive;
+      margin: 0px 9px;
+      /* position: relative;
+      top: 200px; */
+      background-color: rgb(31, 186, 80);
+      color: white;
+      padding: 4px 10px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+  }
+.hindi,.english,.kannada{
+   font-family: 'Baloo Bhai', cursive;
+   margin: 0px 9px;
+   position: relative;
+   left:560px;
+   top: 200px;
+   background-color: rgb(31, 186, 80);
+   font-size: 30px;
+   padding: 4px 10px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   font-size: 15px;
+   text-decoration: none;
+   cursor: pointer;
+}
+button a{
+   color: white;
+
+}
+  button:hover {
+      background-color: rgb(239, 160, 160);
+  }
+
+  .container {
+      border: 2px solid white;
+      margin: 106px 80px;
+      padding: 75px;
+      width: 33%;
+      border-radius: 28px;
+  }
+
+  .form-group input {
+      font-family: 'Baloo Bhai', cursive;
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 25px;
+      border-radius: 8px;
+  }
+
+  .container h1 {
+      text-align: center;
+  }
+
+  .container button {
+      display: block;
+      width: 74%;
+      margin: 20px auto;
+  }
+  

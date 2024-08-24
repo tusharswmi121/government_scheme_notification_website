@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eligibility Check</title>
+</head>
+<body>
+    <h1>Eligibility Check</h1>
+    <form action="/result" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br>
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary" required>
+        <br>
+        <label for="aadhaar">Aadhaar Card:</label>
+        <input type="text" id="aadhaar" name="aadhaar" required>
+        <br>
+        <label for="pan">PAN Card:</label>
+        <input type="text" id="pan" name="pan" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="submit" value="Check Eligibility">
+    </form>
+</body>
+</html>

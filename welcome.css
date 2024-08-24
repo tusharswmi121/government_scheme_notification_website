@@ -1,0 +1,47 @@
+body{
+     font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* background:url(UPJIVIK_logo.png) */
+}
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 9px;
+    background-color: rgb(243, 240, 240);
+    padding: 4px 10px;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top:550px;
+    font-size: 31px;
+    left:625px;
+}
+button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(155, 207, 33);
+}
+
+.back-video{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height: auto;
+    }
+}

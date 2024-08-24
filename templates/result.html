@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Eligibility Result</title>
+</head>
+<body>
+    <h1>Eligibility Result</h1>
+    {% if eligible %}
+        <py-script>
+            for x in {{filtered_schemes}}:
+                print(x)
+        </py-script>
+        <p>Congratulations! You are eligible.</p>
+    {% else %}
+        <p>Sorry, you are not eligible.</p>
+    {% endif %}
+    <p>Your gender is: {{ gender }}</p>
+    <p><a href="/">Back to form</a></p>
+</body>
+</html>

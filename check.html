@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eligibility Check</title>
+	<link rel="stylesheet" href="index2.css">
+
+	<script type="text/javascript">
+		function checkEligibility() {
+			var dob = new Date(document.getElementById("dob").value);
+			var gender = document.querySelector('input[name="gender"]:checked').value;
+			var salary = parseInt(document.getElementById("salary").value);
+			var aadhar = document.querySelector('input[name="aadhar"]:checked');
+			var pan = document.querySelector('input[name="pan"]:checked');
+			var age = new Date(Date.now() - dob.getTime()).getFullYear() - 1970;
+
+			if (age >= 18 && gender === "male" && salary >= 25000 && aadhar && pan) {
+				alert("Congratulations! You are eligible for this offer.");
+			} else if (age >= 18 && gender === "female" && salary >= 20000 && aadhar && pan) {
+				alert("Congratulations! You are eligible for this offer.");
+			} else {
+				alert("Sorry, you are not eligible for this offer.");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" name="dob"><br>
+
+		<label>Gender:</label>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label><br>
+
+		<label for="salary">Salary:</label>
+		<input type="number" id="salary" name="salary"><br>
+
+		<label for="aadhar">Do you have an Aadhar Card?</label>
+		<input type="radio" id="aadharYes" name="aadhar" value="yes">
+		<label for="aadharYes">Yes</label>
+		<input type="radio" id="aadharNo" name="aadhar" value="no">
+		<label for="aadharNo">No</label><br>
+
+		<label for="pan">Do you have a PAN Card?</label>
+		<input type="radio" id="panYes" name="pan" value="yes">
+		<label for="panYes">Yes</label>
+		<input type="radio" id="panNo" name="pan" value="no">
+		<label for="panNo">No</label><br>
+
+		<input type="button" value="Check Eligibility" onclick="checkEligibility()">
+	</form>
+</body>
+</html>

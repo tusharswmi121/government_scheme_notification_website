@@ -1,0 +1,26 @@
+iframe{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 350px;
+    height: 380px;
+    z-index: 999;
+}
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.left img {
+    width: 136px;
+    filter: invert(100%);
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+}
